@@ -1,5 +1,5 @@
-import "bootstrap/dist/css/bootstrap.css";
 import "./globals.css";
+import Script from "next/script";
 
 export const metadata = {
   title: "Tomoyuki Fujii",
@@ -8,7 +8,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <head>
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+        ></link>
+      </head>
+      <body>
+        {children}
+        <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" />
+      </body>
     </html>
   );
 }
