@@ -6,13 +6,13 @@ export default function Footer() {
     <section className="flex flex-col items-center py-16 bg-[#002244] text-white">
       <div className="flex mb-6">
         <div>
-          <FaLinkedin />
+          <FaLinkedin size={40} />
+        </div>
+        <div className="mx-6">
+          <FaGithub color="white" size={40} />
         </div>
         <div>
-          <FaGithub color="white" />
-        </div>
-        <div>
-          <VscMail color="white" />
+          <VscMail color="white" size={40} />
         </div>
       </div>
       <p>© Copyright - Tomoyuki Fujii 2024 All Rights Reserved</p>
