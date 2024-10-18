@@ -11,9 +11,11 @@ export default function Home() {
     <>
       <Header />
       <Top />
-      <Introduction />
-      <Experience />
-      <Projects />
+      <div className="lg:mx-60 px-4">
+        <Introduction />
+        <Experience />
+        <Projects />
+      </div>
       <Footer />
     </>
   );

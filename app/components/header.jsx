@@ -17,7 +17,7 @@ export default function Header() {
 
   return (
     <section
-      className="z-[100] fixed top-0 w-full"
+      className="z-[100] fixed top-0 w-full ease-in-out duration-300"
       style={{ backgroundColor: navBg }}
     >
       <nav className="navbar navbar-expand-lg navbar-light lg:mx-64 lg:my-8">
