@@ -156,7 +156,7 @@ export default function Projects() {
           <div className="row justify-content-start g-4">
             {reversedProjectArray.map((item) => (
               <div className="col-lg-4 col-md-6 col-sm-12" key={item.id}>
-                <div className="border p-4 flex flex-col items-center text-center">
+                <div className="border p-4 flex flex-col items-center text-center h-full">
                   <div className="mb-6">{item.image}</div>
                   <p className="font-bold">{item.name}</p>
                   <p className="text-xl">

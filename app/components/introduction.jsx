@@ -17,7 +17,7 @@ export default function Introduction() {
           <h2>Who I Am</h2>
         </div>
         <div className="lg:flex">
-          <div className="lg:w-1/2 flex flex-col items-center">
+          <div className="lg:w-1/2 flex flex-col items-center p-2">
             <Image
               src={Profile}
               className="rounded"
@@ -25,14 +25,14 @@ export default function Introduction() {
               width={450}
             />
           </div>
-          <div className="lg:w-1/2 text-lg lg:p-6">
+          <div className="lg:w-1/2 text-lg lg:p-6 p-2">
             <p>Hello, my name is Tomoyuki Fujii(Tomo).</p>
             <br />
             <p>
               I started my web development journey at{" "}
               <span>
                 <a
-                  className="text-[#339AF0]"
+                  className="text-[#339AF0] no-underline"
                   href="https://ciccc.ca/"
                   target="_blank"
                   rel="noreferrer"
@@ -63,7 +63,7 @@ export default function Introduction() {
               As my project, I have created{" "}
               <span>
                 <a
-                  className="text-[#339AF0]"
+                  className="text-[#339AF0] no-underline"
                   href="https://vancouver-tennis.vercel.app/"
                   target="_blank"
                   rel="noreferrer"

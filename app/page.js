@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Header from "./components/header";
 import Footer from "./components/footer";
 import Experience from "./components/experience";
@@ -12,7 +11,7 @@ export default function Home() {
     <>
       <Header />
       <Top />
-      <div className="lg:px-64 bg-gray-50">
+      <div className="lg:px-56 bg-gray-50">
         <Introduction />
         <Experience />
         <Projects />
