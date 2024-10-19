@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <Header />
       <Top />
-      <div className="lg:px-56 bg-gray-50">
+      <div className="lg:px-72 bg-gray-50">
         <Introduction />
         <Experience />
         <Projects />
