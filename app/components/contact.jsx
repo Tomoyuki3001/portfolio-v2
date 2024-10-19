@@ -26,19 +26,19 @@ export default function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
     if (name === "") {
-      alert("Please type name");
+      alert("Please input your name");
       return;
     }
     if (email === "") {
-      alert("Please type email address");
+      alert("Please input your email address");
       return;
     }
     if (subject === "") {
-      alert("Please type subject");
+      alert("Please input the subject");
       return;
     }
     if (text === "") {
-      alert("Please type text");
+      alert("Please input some messages");
       return;
     }
 
@@ -61,10 +61,13 @@ export default function Contact() {
     setEmail("");
     setSubject("");
     setText("");
-    alert("Email has been sent!");
+    alert("Your form has been sent!");
   };
   return (
-    <section id="contact" className="w-full flex flex-col items-center py-36">
+    <section
+      id="contact"
+      className="w-full flex flex-col items-center py-20 lg:py-36"
+    >
       <div className="text-center mb-12">
         <p className="uppercase text-xl tracking-widest text-gray-500">
           Contact
@@ -78,7 +81,7 @@ export default function Contact() {
           referrerpolicy="no-referrer-when-downgrade"
           className="google-map w-full p-4"
         ></iframe>
-        <div className="col-span-3 w-full lg:p-4">
+        <div className="col-span-3 w-full px-4 lg:px-0">
           <div className="p-2">
             <form ref={form} onSubmit={sendEmail}>
               <div className="grid md:grid-cols-2 gap-4 w-full py-2">
@@ -128,7 +131,7 @@ export default function Contact() {
                 ></textarea>
               </div>
               <div className="flex justify-center">
-                <button className="w-3/4 p-4 text-gray-100 mt-12 text-xl btn">
+                <button className="btn btn-outline-secondary !px-36 !py-4 mt-8">
                   Send
                 </button>
               </div>

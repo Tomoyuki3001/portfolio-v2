@@ -144,7 +144,10 @@ export default function Projects() {
 
   const reversedProjectArray = [...projects].reverse();
   return (
-    <section id="project" className="w-full flex flex-col items-center py-36">
+    <section
+      id="project"
+      className="w-full flex flex-col items-center py-20 lg:py-36"
+    >
       <div>
         <div className="text-center mb-12">
           <p className="uppercase mb-8 text-xl tracking-widest text-gray-500">
@@ -152,12 +155,12 @@ export default function Projects() {
           </p>
           <h2>What I&apos;ve Built</h2>
         </div>
-        <div className="container">
+        <div className="container px-4 lg:px-0">
           <div className="row justify-content-start g-4">
             {reversedProjectArray.map((item) => (
               <div className="col-lg-4 col-md-6 col-sm-12" key={item.id}>
                 <div className="border p-4 flex flex-col items-center text-center h-full">
-                  <div className="mb-6">{item.image}</div>
+                  <div className="mb-6 text-gray-500">{item.image}</div>
                   <p className="font-bold">{item.name}</p>
                   <p className="text-xl">
                     <a
@@ -168,7 +171,7 @@ export default function Projects() {
                     >
                       Demo{" "}
                     </a>
-                    <span>{item.code === "" ? "" : "/"}</span>
+                    <span>{item.code === "" ? "" : "|"}</span>
                     <a
                       href={item.code}
                       target="_blank"
@@ -178,8 +181,8 @@ export default function Projects() {
                       {item.code === "" ? "" : " Code"}
                     </a>
                   </p>
-                  <p className="">{item.description}</p>
-                  <p className="">{item.skills}</p>
+                  <p className="text-gray-600">{item.description}</p>
+                  <p className="text-gray-600">{item.skills}</p>
                 </div>
               </div>
             ))}

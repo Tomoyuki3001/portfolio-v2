@@ -62,7 +62,7 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className="w-full flex flex-col items-center py-36"
+      className="w-full flex flex-col items-center py-20 lg:py-36"
     >
       <div>
         <div className="text-center mb-12">
@@ -71,12 +71,12 @@ export default function Experience() {
           </p>
           <h2>What I&apos;ve Worked</h2>
         </div>
-        <div className="container">
+        <div className="container px-4 lg:px-0">
           <div className="row justify-content-start g-4">
             {experience.map((item) => (
               <div className="col-lg-4 col-md-6 col-sm-12" key={item.id}>
                 <div className="border p-4 flex flex-col items-center  h-full">
-                  <div className="mb-6">{item.image}</div>
+                  <div className="mb-6 text-gray-500">{item.image}</div>
                   <p className="font-bold">{item.title}</p>
                   <a
                     href={item.url}
@@ -86,8 +86,8 @@ export default function Experience() {
                   >
                     {item.name}
                   </a>
-                  <p className="">{item.term}</p>
-                  <p className="">{item.skills}</p>
+                  <p className="text-gray-600">{item.term}</p>
+                  <p className="text-gray-600">{item.skills}</p>
                 </div>
               </div>
             ))}

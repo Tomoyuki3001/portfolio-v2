@@ -8,20 +8,23 @@ export default function Header() {
   const [navBg, setNavBg] = useState("");
   const [textColor, setTextColor] = useState("#ffffff");
   const [logo, setLogo] = useState(LogoWhite);
+  const [menu, setMenu] = useState(`url(/images/menu-white.png)`);
 
   useEffect(() => {
-    const handleShadow = () => {
+    const changeTheStyle = () => {
       if (window.scrollY >= 20) {
         setNavBg("#ffffff");
         setTextColor("#000000");
         setLogo(LogoBlack);
+        setMenu(`url(/images/menu-black.png)`);
       } else {
         setNavBg("transparent");
         setTextColor("#ffffff");
         setLogo(LogoWhite);
+        setMenu(`url(/images/menu-white.png)`);
       }
     };
-    window.addEventListener("scroll", handleShadow);
+    window.addEventListener("scroll", changeTheStyle);
   }, []);
 
   return (
@@ -29,7 +32,7 @@ export default function Header() {
       className="z-[100] fixed top-0 w-full ease-in-out duration-300 drop-shadow-xl"
       style={{ backgroundColor: navBg }}
     >
-      <nav className="navbar navbar-expand-lg navbar-light lg:mx-56 lg:my-2">
+      <nav className="navbar navbar-expand-lg navbar-light lg:mx-56 lg:my-1">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
             <Image src={logo} alt="My logo" width={120} />
@@ -42,8 +45,12 @@ export default function Header() {
             aria-controls="navbarNav"
             aria-expanded="false"
             aria-label="Toggle navigation"
+            style={{ border: "2px solid transparent" }}
           >
-            <span className="navbar-toggler-icon"></span>
+            <span
+              className="navbar-toggler-icon"
+              style={{ backgroundImage: menu }}
+            ></span>
           </button>
           <div
             className="collapse navbar-collapse lg:flex lg:justify-end"

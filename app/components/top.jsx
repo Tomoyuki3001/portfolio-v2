@@ -1,10 +1,30 @@
+"use client";
+
+import { useEffect, useState } from "react";
+
 export default function Top() {
+  const [bg, setBg] = useState(`url(/images/vancouver.jpg)`);
+
+  useEffect(() => {
+    const changeTopBg = () => {
+      if (window.innerWidth < 1019) {
+        setBg(`url(/images/van-mobile.jpg)`);
+      } else {
+        setBg(`url(/images/vancouver.jpg)`);
+      }
+    };
+
+    window.addEventListener("resize", changeTopBg);
+  }, []);
+
+  if (window.innerWidth < 600) {
+  }
   return (
     <section
       id="home"
       className="w-full h-screen flex justify-center items-center bg-cover relative"
       style={{
-        backgroundImage: `url(/images/vancouver.jpg)`,
+        backgroundImage: bg,
       }}
     >
       <div className="w-full h-screen flex justify-center items-center bg-black bg-opacity-75">
@@ -45,11 +65,15 @@ export default function Top() {
           <p className="pt-10 pb-6 px-4 text-white text-xl">
             I am a Junior Full-Stack Developer based in Tokyo.
           </p>
-          <button className="mainBtn">
+          <button
+            type="button"
+            className="btn btn-outline-secondary !px-10 !py-4"
+          >
             <a
               href="https://drive.google.com/file/d/12x3bSZKNJxTgqUkHozYKTL3gVH-bhsTN/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
+              className="no-underline text-white"
             >
               RESUME
             </a>

@@ -3,7 +3,7 @@ import { VscMail } from "react-icons/vsc";
 
 export default function Footer() {
   return (
-    <section className="flex flex-col items-center py-16 bg-gray-800 text-white">
+    <section className="flex flex-col items-center py-16 bg-gray-900 text-white">
       <div className="flex mb-6">
         <div>
           <FaLinkedin size={40} />
@@ -15,7 +15,9 @@ export default function Footer() {
           <VscMail color="white" size={40} />
         </div>
       </div>
-      <p>© Copyright - Tomoyuki Fujii 2024 All Rights Reserved</p>
+      <p className="sm:text-sm">
+        © Copyright - Tomoyuki Fujii 2024 All Rights Reserved
+      </p>
     </section>
   );
 }
