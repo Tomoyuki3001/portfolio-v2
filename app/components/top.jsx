@@ -17,8 +17,6 @@ export default function Top() {
     window.addEventListener("resize", changeTopBg);
   }, []);
 
-  if (window.innerWidth < 600) {
-  }
   return (
     <section
       id="home"
