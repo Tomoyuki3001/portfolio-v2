@@ -144,10 +144,7 @@ export default function Projects() {
 
   const reversedProjectArray = [...projects].reverse();
   return (
-    <section
-      id="about"
-      className="w-full flex flex-col items-center py-8 lg:my-36"
-    >
+    <section id="project" className="w-full flex flex-col items-center py-36">
       <div>
         <div className="text-center mb-12">
           <p className="uppercase mb-8 text-xl tracking-widest text-gray-500">

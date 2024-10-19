@@ -8,7 +8,7 @@ export default function Introduction() {
     "rounded-full shadow-lg p-6 cursor-pointer hover:scale-110 ease-in duration-300 text-gray-900";
 
   return (
-    <section id="about" className="w-full flex items-center py-8 lg:my-36">
+    <section id="bio" className="w-full flex items-center py-36">
       <div>
         <div className="text-center mb-12">
           <p className="uppercase mb-8 text-xl tracking-widest text-gray-500">

@@ -61,8 +61,8 @@ export default function Experience() {
 
   return (
     <section
-      id="about"
-      className="w-full flex flex-col items-center py-8 lg:my-36"
+      id="experience"
+      className="w-full flex flex-col items-center py-36"
     >
       <div>
         <div className="text-center mb-12">
