@@ -29,7 +29,7 @@ export default function Header() {
       className="z-[100] fixed top-0 w-full ease-in-out duration-300 drop-shadow-xl"
       style={{ backgroundColor: navBg }}
     >
-      <nav className="navbar navbar-expand-lg navbar-light lg:mx-72 lg:my-4">
+      <nav className="navbar navbar-expand-lg navbar-light lg:mx-64 lg:my-2">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
             <Image src={logo} alt="My logo" width={120} />
