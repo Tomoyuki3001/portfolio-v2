@@ -28,7 +28,7 @@ export default function Home() {
     <>
       <Header />
       <Top />
-      <div className="lg:px-60">
+      <div className="lg:px-56">
         <Introduction />
         <Experience />
         <Projects />
