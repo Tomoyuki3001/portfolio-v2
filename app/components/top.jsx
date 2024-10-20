@@ -1,28 +1,10 @@
-"use client";
-
-import { useEffect, useState } from "react";
-
 export default function Top() {
-  const [bg, setBg] = useState(`url(/images/vancouver.jpg)`);
-
-  useEffect(() => {
-    const changeTopBg = () => {
-      if (window.innerWidth < 1019) {
-        setBg(`url(/images/van-mobile.jpg)`);
-      } else {
-        setBg(`url(/images/vancouver.jpg)`);
-      }
-    };
-
-    window.addEventListener("resize", changeTopBg);
-  }, []);
-
   return (
     <section
       id="home"
       className="w-full h-screen flex justify-center items-center bg-cover relative"
       style={{
-        backgroundImage: bg,
+        backgroundImage: `url(/images/vancouver.jpg)`,
       }}
     >
       <div className="w-full h-screen flex justify-center items-center bg-black bg-opacity-75">

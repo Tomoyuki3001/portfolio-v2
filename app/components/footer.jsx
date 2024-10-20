@@ -15,7 +15,7 @@ export default function Footer() {
           <VscMail color="white" size={40} />
         </div>
       </div>
-      <p className="sm:text-sm">
+      <p className="sm:text-xs text-sm">
         © Copyright - Tomoyuki Fujii 2024 All Rights Reserved
       </p>
     </section>
