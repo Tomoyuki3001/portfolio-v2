@@ -28,7 +28,7 @@ export default function Home() {
     <>
       <Header />
       <Top />
-      <div>
+      <div className="lg:px-60">
         <Introduction />
         <Experience />
         <Projects />

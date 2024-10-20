@@ -10,7 +10,7 @@ export default function Introduction() {
   return (
     <section
       id="scrollspyHeading1"
-      className="w-full flex items-center py-20 lg:py-36 "
+      className="w-full flex items-center py-20 lg:py-36"
     >
       <div>
         <div className="text-center mb-12">
