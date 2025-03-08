@@ -10,7 +10,7 @@ export default function Experience() {
       url: "https://connec10.co.jp/",
       name: "CONNECT Inc.",
       term: "Sep 2024 - Present",
-      skills: "JavaScript, PHP, Laravel, MySQL",
+      skills: "JavaScript, Vue.js, PHP, Laravel, MySQL",
     },
     {
       id: 5,

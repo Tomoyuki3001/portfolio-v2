@@ -1,8 +1,8 @@
 "use client";
-import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import LogoWhite from "../../public/images/logo-white.png";
+import { useEffect, useState } from "react";
 import LogoBlack from "../../public/images/logo-black.png";
+import LogoWhite from "../../public/images/logo-white.png";
 
 export default function Header() {
   const [navBg, setNavBg] = useState("");

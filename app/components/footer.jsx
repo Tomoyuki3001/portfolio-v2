@@ -2,21 +2,37 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { VscMail } from "react-icons/vsc";
 
 export default function Footer() {
+  const year = new Date().getFullYear();
   return (
     <section className="flex flex-col items-center py-16 bg-gray-900 text-white">
       <div className="flex mb-6">
-        <div>
-          <FaLinkedin size={40} />
-        </div>
-        <div className="mx-6">
-          <FaGithub color="white" size={40} />
-        </div>
-        <div>
-          <VscMail color="white" size={40} />
-        </div>
+        <a
+          target="_blank"
+          className="text-inherit"
+          rel="noopener noreferrer"
+          href="https://www.linkedin.com/in/tomoyuki-fujii-376616251/"
+        >
+          <FaLinkedin size={25} />
+        </a>
+        <a
+          target="_blank"
+          className="text-inherit mx-6"
+          rel="noopener noreferrer"
+          href="https://github.com/Tomoyuki3001"
+        >
+          <FaGithub size={25} />
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-inherit"
+          href="mailto:mjr01300828@gmail.com"
+        >
+          <VscMail size={25} />
+        </a>
       </div>
       <p className="sm:text-xs text-sm">
-        © Copyright - Tomoyuki Fujii 2024 All Rights Reserved
+        © Copyright - Tomoyuki Fujii {year} All Rights Reserved
       </p>
     </section>
   );

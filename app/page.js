@@ -37,7 +37,7 @@ export default function Home() {
       <Footer />
       <button
         type="button"
-        className="btn btn-danger btn-floating btn-lg fixed bottom-10 right-10 !p-4 !bg-sky-500 hover:!bg-sky-700 !border-none"
+        className="btn btn-danger btn-floating btn-lg fixed bottom-10 right-10 !p-2 !bg-sky-500 hover:!bg-sky-700 !border-none"
         style={{ display: topLink }}
         id="btn-back-to-top"
       >

@@ -43,14 +43,14 @@ export default function Top() {
             </span>
           </div>
           <p className="pt-10 pb-6 px-4 text-white text-xl">
-            I am a Junior Full-Stack Developer based in Tokyo.
+            I am a Frontend Developer based in Tokyo.
           </p>
           <button
             type="button"
             className="btn btn-outline-secondary !px-10 !py-4"
           >
             <a
-              href="https://drive.google.com/file/d/1-GXrZ3jiKdoURKbdlyDMNX9scKJQUXc3/view?usp=sharing"
+              href="https://drive.google.com/file/d/11HwW_kkF2MdIkEIDbqYOMA3v_ljCx_SV/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
               className="no-underline text-white"
