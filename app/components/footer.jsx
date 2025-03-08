@@ -12,7 +12,7 @@ export default function Footer() {
           rel="noopener noreferrer"
           href="https://www.linkedin.com/in/tomoyuki-fujii-376616251/"
         >
-          <FaLinkedin size={25} />
+          <FaLinkedin size={30} />
         </a>
         <a
           target="_blank"
@@ -20,7 +20,7 @@ export default function Footer() {
           rel="noopener noreferrer"
           href="https://github.com/Tomoyuki3001"
         >
-          <FaGithub size={25} />
+          <FaGithub size={30} />
         </a>
         <a
           target="_blank"
@@ -28,7 +28,7 @@ export default function Footer() {
           className="text-inherit"
           href="mailto:mjr01300828@gmail.com"
         >
-          <VscMail size={25} />
+          <VscMail size={30} />
         </a>
       </div>
       <p className="sm:text-xs text-sm">
