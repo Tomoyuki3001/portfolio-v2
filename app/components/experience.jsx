@@ -6,7 +6,7 @@ export default function Experience() {
     {
       id: 6,
       image: <PiCodeLight size={50} />,
-      title: "Full-Stack Developer",
+      title: "Software Developer",
       url: "https://connec10.co.jp/",
       name: "CONNECT Inc.",
       term: "Sep 2024 - Present",
